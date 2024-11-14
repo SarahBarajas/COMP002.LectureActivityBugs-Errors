@@ -12,8 +12,8 @@ myAverage = myAverage / myGrades.length;
 //output the average grade to the console 
 console.log("My grade average is " + myAverage);
 // exception class for invalid grades
-class InvalidGradeException extends Error{
-    { constructor(message); {
+class InvalidGradeException extends Error {
+     constructor(message) {
         super(message);
         this.name = "InvalidGradeExpectations";
     }
@@ -32,12 +32,13 @@ function validateGrade(grade) {
 try {
     //test validateGrade function with an invalid value
     validateGrade(105); //change the value 
-} catch(e){
-    if (e instanceof InvalidGradeException)}
+} catch (e) {
+    if (e instanceof InvalidGradeException); }
         //output the custom exception message 
         console.error(e.message);
     } else {
         // output generic error message for unexpected error
         console.error("An unexpected error occurred:", e);
     }
+}
 
