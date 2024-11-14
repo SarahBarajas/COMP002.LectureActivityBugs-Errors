@@ -11,4 +11,10 @@ for (let i = 1; i <= myGrades.length; i++) {
 myAverage = myAverage / myGrades.length;
 //output the average grade to the console 
 console.log("My grade average is " + myAverage);
-
+// exception class for invalid grades
+class InvalidGradeException extends Error{
+    { constructor(message) {
+        super(message);
+        this.name = "InvalidGradeExpectations";
+    }
+}
